@@ -85,8 +85,14 @@ This sample was derived from breadth_first_search.
 |---------------| -------------------- | ------------ | -------------  | ------------------ |
 
 * ignore preconditions
-  * This algorithm is the minimum elapsed time in my environment and expansions is lower than BFS. This algorithm is similar to astar search(estimate minimum distance ignoring wall). The decreased expansions designates the efficient path cut-off.
+  * This algorithm is the minimum elapsed time in my environment and expansions is lower than BFS.
+   This algorithm is similar to A* search(estimate minimum distance ignoring wall).
+    The decreased expansions designates the efficient path cut-off.
 * level-sum
-  * This algorithm is the minimum expansions. However the elapsed time is larger than BFS and ignore preconditions. I think this is because look-ahead search in heauristic function is higher cost. In other words, expansion is done in heuristic function. According to AIND 10.3.1, this algorithm is effective for largely decomposable problem. So this algorithm seems not be suitable for this problem (this problem's actions are largely constrained by cargo and plain places, not so decomposable).
+  * This algorithm is the minimum expansions.
+   However the elapsed time is larger than BFS and ignore preconditions.
+   I think this is because look-ahead search in heuristic function is higher cost.
+   In other words, expansion is done in heuristic function. According to AIND 10.3.1, this algorithm is effective for largely decomposable problem.
+    So this algorithm seems not be suitable for this problem (this problem's actions are largely constrained by each cargo and plain can be exists same places, not so decomposable).
 
 
