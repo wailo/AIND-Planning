@@ -42,21 +42,21 @@ This sample was derived from breadth_first_search.
 # Performance Comparison
 ## non-heuristic search
 
-|---------------| ------------- | ------------ | -------------  | ------------------ |
-| Problem       | Algorithm     | Path Length  |  Expansions    | Elapsed Time (sec) |
-|---------------| ------------- | ------------ | -------------  | ------------------ |
-| Problem1      | breadth-first | 6            | 43             | 0.150              |
-| Problem1      | depth-first   | 12           | 12             | 0.037              |
-| Problem1      | uniform-cost  | 6            | 55             | 0.182              |
-| ------------- | ------------- | ------------ | -------------  | ------------------ |
-| Problem2      | breadth-first | 9            | 3343           | 69                 |
-| Problem2      | depth-first   | 582          | 582            | 11.4               |
-| Problem2      | uniform-cost  | 9            | 4852           | 123.6              |
-| ------------- | ------------- | ------------ | -------------  | ------------------ |
-| Problem3      | breadth-first | 12           | 14663          | 475                |
-| Problem3      | depth-first   | 596          | 627            | 15.1               |
-| Problem3      | uniform-cost  | 12           | 18235          | 1255               |
-| ------------- | ------------- | ------------ | -------------  | ------------------ |
+| --------------- | ------------- | ------------ | ------------- | ------------------ |
+| Problem         | Algorithm     | Path Length  |  Expansions   | Elapsed Time (sec) |
+| --------------- | ------------- | ------------ | ------------- | ------------------ |
+| Problem1        | breadth-first | 6            | 43            | 0.150              |
+| Problem1        | depth-first   | 12           | 12            | 0.037              |
+| Problem1        | uniform-cost  | 6            | 55            | 0.182              |
+| --------------- | ------------- | ------------ | ------------- | ------------------ |
+| Problem2        | breadth-first | 9            | 3343          | 69                 |
+| Problem2        | depth-first   | 582          | 582           | 11.4               |
+| Problem2        | uniform-cost  | 9            | 4852          | 123.6              |
+| --------------- | ------------- | ------------ | ------------- | ------------------ |
+| Problem3        | breadth-first | 12           | 14663         | 475                |
+| Problem3        | depth-first   | 596          | 627           | 15.1               |
+| Problem3        | uniform-cost  | 12           | 18235         | 1255               |
+| --------------- | ------------- | ------------ | ------------- | ------------------ |
 
 * abount problems
   * the number of problem1, problem2, and problem3 initial states are 12, 27 and 32. The larger the number of state is, The large the number of expansions is. As AIND 10.2.1 says, the total cost for naieve algorithm estimates (average possible actions)**(path length). So, the cost order tends to be exponential for the number of cargo in goal states.
@@ -71,18 +71,18 @@ This sample was derived from breadth_first_search.
 
 ## heuristic search
 
-|---------------| -------------------- | ------------ | -------------  | ------------------ |
-| Problem       | Algorithm            | Path Length  |  Expansions    | Elapsed Time (sec) |
-|---------------| -------------------- | ------------ | -------------  | ------------------ |
-| Problem1      | ignore preconditions | 6            | 41             | 0.188              |
-| Problem1      | level-sum            | 6            | 11             | 2.246              |
-|---------------| -------------------- | ------------ | -------------  | ------------------ |
-| Problem2      | ignore preconditions | 9            | 1506           | 49.46              |
-| Problem2      | level-sum            | 9            | 86             | 301                |
-|---------------| -------------------- | ------------ | -------------  | ------------------ |
-| Problem3      | ignore preconditions | 12           | 5118           | 421.81             |
-| Problem3      | level-sum            | 12           | 404            | 2692               |
-|---------------| -------------------- | ------------ | -------------  | ------------------ |
+| --------------- | -------------------- | ------------ | ------------- | ------------------ |
+| Problem         | Algorithm            | Path Length  |  Expansions   | Elapsed Time (sec) |
+| --------------- | -------------------- | ------------ | ------------- | ------------------ |
+| Problem1        | ignore preconditions | 6            | 41            | 0.188              |
+| Problem1        | level-sum            | 6            | 11            | 2.246              |
+| --------------- | -------------------- | ------------ | ------------- | ------------------ |
+| Problem2        | ignore preconditions | 9            | 1506          | 49.46              |
+| Problem2        | level-sum            | 9            | 86            | 301                |
+| --------------- | -------------------- | ------------ | ------------- | ------------------ |
+| Problem3        | ignore preconditions | 12           | 5118          | 421.81             |
+| Problem3        | level-sum            | 12           | 404           | 2692               |
+| --------------- | -------------------- | ------------ | ------------- | ------------------ |
 
 * ignore preconditions
   * This algorithm is the minimum elapsed time in my environment and expansions is lower than BFS.
