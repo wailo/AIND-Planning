@@ -71,18 +71,15 @@ This sample was derived from breadth_first_search.
 
 ## heuristic search
 
-| --------------- | -------------------- | ------------ | ------------- | ------------------ |
 | Problem         | Algorithm            | Path Length  |  Expansions   | Elapsed Time (sec) |
 | --------------- | -------------------- | ------------ | ------------- | ------------------ |
 | Problem1        | ignore preconditions | 6            | 41            | 0.188              |
 | Problem1        | level-sum            | 6            | 11            | 2.246              |
-| --------------- | -------------------- | ------------ | ------------- | ------------------ |
 | Problem2        | ignore preconditions | 9            | 1506          | 49.46              |
 | Problem2        | level-sum            | 9            | 86            | 301                |
-| --------------- | -------------------- | ------------ | ------------- | ------------------ |
 | Problem3        | ignore preconditions | 12           | 5118          | 421.81             |
 | Problem3        | level-sum            | 12           | 404           | 2692               |
-| --------------- | -------------------- | ------------ | ------------- | ------------------ |
+
 
 * ignore preconditions
   * This algorithm is the minimum elapsed time in my environment and expansions is lower than BFS.
